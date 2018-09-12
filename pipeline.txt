@@ -1,7 +1,0 @@
-robot convert --input molecule-tree.obo --output chebi_module.owl
-robot query --format ttl --input chebi_module.owl --construct extract1.sparql chebi_extract.owl
-robot merge --input chebi.owl --input chebi_extract.owl --output chebi_annotated.owl
-owltools chebi_annotated.owl --extract-ontology-subset -u http://purl.obolibrary.org/obo/chebi.owl -s chebi_slim -o chebi_slim.owl
-
-# if slim needs to be removed from chebi.owl - need to work on this!
-robot merge --input chebi_annotated.owl --input chebi_slim.owl unmerge --input chebi_slim.owl --output chebi_simplified.owl
