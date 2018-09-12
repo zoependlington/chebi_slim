@@ -12,7 +12,7 @@ Please clone this repository to your local machine
 	- By default, obsolete terms are also extracted into the final slim file. 
 		- If you do not want obsolete terms, uncomment the last filter statement in the extract.sparql file
 5. Ensure owltools is in the "bin" directory.
-6. Run the following command: `bash run_chebi_slim.sh`
+6. Run the following command on the command line from within the clone directory: `bash run_chebi_slim.sh`
 	- This will annotate a copy of CHEBI (`chebi_annotated.owl`) with the slim annotation and also extract the slim.
 		- Comment out the last command in the `run_chebi_slim.sh` file if you do not wish to extract the slim.
 		
