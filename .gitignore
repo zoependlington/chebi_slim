@@ -1,5 +1,5 @@
 *.tmp
-./build
+build/
 catalog-v001.xml
 pipeline.txt
-./import/.
+import/
