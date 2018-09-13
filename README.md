@@ -9,7 +9,7 @@
 		- If this is different please edit the molecule-tree.obo reference in the first command in `"run_chebi_slim.sh"` to your file name
 4. Ensure _extract.sparql_ is in the "sparql" directory.
 	- By default, obsolete terms are also extracted into the final slim file. 
-		- If you do not want obsolete terms, uncomment the last filter statement in the extract.sparql file
+		- If you do not want obsolete terms, uncomment the last filter statement in the extract.sparql file: `#FILTER EXISTS {?s oboInOwl:id ?o}.#`
 		- If you wish to have a different annotation for your slim terms, this an also be changed in the extract.sparql file
 			- Replace `"chebi_slim"` with your desired annotation. This can be anything relating to your desired slim.
 5. Ensure owltools is in the "bin" directory.

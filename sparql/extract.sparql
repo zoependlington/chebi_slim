@@ -15,5 +15,5 @@ WHERE {
 	FILTER NOT EXISTS {?s a owl:ObjectProperty} .
 	FILTER NOT EXISTS {?s a owl:AnnotationProperty} 
 	FILTER NOT EXISTS {?s a owl:Ontology}.
-	#FILTER NOT EXISTS {?s a owl:deprecated}#
+	#FILTER EXISTS {?s oboInOwl:id ?o}.#
 	}
