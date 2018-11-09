@@ -1,5 +1,4 @@
 *.tmp
 build/
 catalog-v001.xml
-pipeline.txt
-import/
+templates/chebi.owl
